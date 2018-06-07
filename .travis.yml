@@ -1,6 +1,10 @@
 language: node_js
-node_js: "node"
+node_js: "9.5.0"
 deploy:
   provider: heroku
   api_key:
     secure: "gqyX2e1ctHy+1gt1fSUyRqyfexYS6PfJ3q8H1GgMk0ZXydv7tE65zpQkSQYr5XLi94/odPegcSQDhbt8yOzP1srcBZ0qIt/WgOaEAlMsQlR7itdw75Omcyd49Tjr7te1GI6UdgXD11RbpIosBHuajSu97D9uukDyA5a9CiiQPQmOkKRvTlOoOOEpNrI6JmSRVaim8QxOvEod+y7LEdDJPznQtbmdLdHZ+QpraTpxGo+CLLFA0oDcXbTF95B8OnzcsQ8MhoA2Uw7tYxPDnKN8E+t376zWttPvXDeHKlGKwNhD6BibKc9MLlDjHJswtnCBGj6+VK08t9Bfz0JjMkTYkwiyTmayOdeFUoflv64MgSHu1QEepB1K/Vb9Q8VXGaNPTgDpK/SSbK+/OY+AdFGzpFJZxJDB2fA1MjIkiKbuGPdTODMup+D03GggaFW6LycVNmUdqqEe4/VHUvzmI5iYYJQQ6VckAidsBw3nLwsb1FeCaYdXevTOrL+y3ZBga1c+zGcw7IJa/9PS8ma8Ikk7lGFuakPutQO89Z64pes3BkdjiN3wNo1qDzIqk1KL6jGW5IB5fSflfmryZK/QdH1yF39slmajETZ0ZsWE9yXbZxE26UoM+pmfORDPD5sZJv9hTUOIYpmqTtuCcR0Ld+8XzY/Iuv2ENLsHZW3yxRztIZE="
+addons:
+  apt:
+    packages:
+    - mongodb-org
